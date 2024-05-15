@@ -1,0 +1,43 @@
+.header__nav {
+	margin-left: auto;
+	
+	@include mobile {
+		display: none;
+	}
+}
+.nav {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 180%;
+
+	@include tablet {
+		font-size: 16px;
+	}
+
+}
+.nav__list {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	
+	a {
+		color: var(--neutral-gray404040);
+		transition: all 0.2s ease-in;
+		
+	}
+
+	a.active {
+		color: var(--black);
+	}
+
+	@include tablet {
+		gap: 20px;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		text-underline-offset: 5px;
+		color: var(--primary-primary-600);
+	}
+}

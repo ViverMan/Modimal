@@ -1,0 +1,21 @@
+.header {
+	position: relative;
+	z-index: 999;
+
+	background-color: #fff;
+	padding: 16px 0 18px;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include mobile {
+		padding: 4px 0 8px;
+	}
+}
+
+.header__nav-btn {
+	display: none;
+}
